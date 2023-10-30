@@ -1,4 +1,4 @@
- Amazon Clone Website Page
+# Amazon Clone Website Page
 
 
 
@@ -18,7 +18,6 @@ This website only describes the front page of Amazon, it is created by me for pr
 ## Screenshots
 
 ![Uploading Web capture_30-10-2023_195845_127.0.0.1.jpeg…]()
-
 
 ## Technologies Used
 
