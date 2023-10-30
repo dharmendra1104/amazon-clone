@@ -1,11 +1,10 @@
-![Web capture_30-10-2023_195845_127 0 0 1 (1)](https://github.com/dharmendra1104/amazon-clone/assets/140887766/1f62f02b-10f6-4d8f-9c1c-f750279e347f)# Amazon Clone Website Page
-
-
+# Amazon Clone Website Page
 
 ## Table of Contents
 
   - [Description](#description)
   - [Technologies Used](#technologies-used)
+  - [Screenshots](#Screenshot)
   - [Features](#features)
   - [Contributing](#contributing)
   - [License](#license)
@@ -18,6 +17,9 @@ This website only describes the front page of Amazon, it is created by me for pr
 
 - HTML
 - CSS
+
+## Screenshot
+![Web capture_30-10-2023_195845_127 0 0 1 (1)](https://github.com/dharmendra1104/amazon-clone/assets/140887766/1f62f02b-10f6-4d8f-9c1c-f750279e347f)# Amazon Clone Website Page
 
 ## Features
 
