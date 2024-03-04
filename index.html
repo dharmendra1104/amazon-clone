@@ -12,6 +12,7 @@
          <div class="navbar">
             <div class="nav-logo border">
                 <div class="logo"></div>
+                <span>.in</span>
             </div>
             <div class="nav-address border">
                 <p class="address1">Deliver to</p>
@@ -23,6 +24,11 @@
             <div class="nav-search">
                 <select class="search-select">
                     <option>All</option>
+                    <option>Alexa Skills</option>
+                    <option>All Category</option>
+                    <option>Amazon Device</option>
+                    <option>Amazon Fashion</option>
+                    <option>Amazon Pharmacy</option>
                 </select>
                 <input placeholder="Search Amazon" class="search-input">
                 <div class="search-icon">
@@ -30,13 +36,28 @@
 
             </div>
          </div>
+         <div class="lang">
+          <img src="India-flag-icon-on-transparent-background-PNG-removebg-preview.png" alt="#">
+          <!-- <h5>EN <span class="down"><select name="" id=""></select><i class="fa-solid fa-caret-down"></i></span></h5> -->
+           <h5>EN <span class="down"><select name="" id="">
+            <option value="">English</option>
+            <option value="">हिन्दी - HI</option>
+            <option value="">தமிழ் - TA</option>
+            <option value="">తెలుగు - TE </option>
+            <option value="">ಕನ್ನಡ - KN</option>
+            <option value="">മലയാളം - ML</option>
+            <option value="">বাংলা - BN</option>
+            <option value="">मराठी - MR</option>
+           </select></span></h5>
+         </div>
          <div class="nav-singin border">
             <p><span>Hello, sign in</span></p>
-            <p class="nav-secpanel-allond">Account & List</p>
+            <p class="nav-secpanel-allond">Account & List <span class="down"><i class="fa-solid fa-caret-down"></i></span></p>
          </div>
          <div class="nav-return border">
             <p><span>Returns</span></p>
             <p class="nav-second">& orders</p>
+
          </div>
          <div class="nav-cart border">
          <i class="fa-solid fa-cart-shopping"></i>
@@ -45,7 +66,7 @@
         </div>
 
          <div class="panel">
-                <div class="">
+                <div class="menu">
                     <i class="fa-solid fa-bars"></i>
                     All
                 </div>
@@ -53,21 +74,25 @@
                     <p>Amazon miniTV</p>
                     <p>Sell</p>
                     <p>Best Sellers</p>
+                    <p>Mobile</p>
                     <p>Today's Deals</p>
-                    <p>Mobiles</p>
+                    <p>Electronic</p>
+                    <p>Customer Service</p>
 
                 </div>
                 <div class="panel-deal">
-                    Shop deals in Electronic
-
+                    New Launches from Mobile, Electronic & more | Shop now 
                 </div>
 
          </div>
     </header>
     <div class="hero-section">
-        <div class="hero-msg">
-            <p>You are on Amazon.com,You can also shop on Amazon india for millian of product with fast local delivery  <a> Click here to go to amazon.in </a></p>
-    </div>
+    <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <img class="mySlides" src="hero_image.jpg">
+      <img class="mySlides" src="box4_image.jpg">
+      <img class="mySlides" src="box7_image.jpg">
+      <img class="mySlides" src="box5_image.jpg">    
+      <button class="display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
 </div>
 <div class="shop-section">
@@ -175,7 +200,7 @@
     </div>
 </Footer>
 
-   
+   <script src="index.js"></script>
     
 </body>
 </html>
