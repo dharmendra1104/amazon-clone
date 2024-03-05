@@ -28,10 +28,6 @@
 
 .nav-logo span {
     margin-top: 14px;
-    /* margin-left: 90px; */
-    /* font-size: 40px; */
-    /* position: absolute; */
-    /* margin-left: 10px */
 }
 
 .logo {
@@ -211,35 +207,54 @@ span {
     background-repeat: no-repeat;
 }
 
-.hero-section .display-left {
-    position: absolute;
-    transform: translate(-650px, -120px);
-    /* transform: translate(-100%, 100%px); */
+/**slide button**/
+.hero-section {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
 }
 
-.hero-section .display-right {
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+.display-btn {
     position: absolute;
-    transform: translate(650px, -120px);
-    /* transform: translate(50%, -50%); */
+    top: 50%;
+    height: 95%;
+    width: 60px;
+    transform: translateY(-50%);
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.display-btn:hover {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.display-btn:first-child {
+    left: 10px;
+}
+
+.display-btn:last-child {
+    right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .display-btn {
+        font-size: 18px;
+        padding: 8px;
+    }
 }
 
 .hero-section button {
-    padding: 10px;
-    height: 20%;
     font-size: 50px;
     color: white;
     background: none;
     border: none;
-}
-
-.hero-section button:hover {
-    border: 2px solid black;
-}
-
-
-.mySlides {
-    display: none;
-    width: 100%
 }
 
 /**shop sectio**/
