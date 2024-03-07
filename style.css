@@ -316,6 +316,8 @@ span {
     color: #007185;
 }
 
+/* Today deal items */
+
 .Slide-shop-item{
     height: 330px;
     width: 97%;
@@ -340,10 +342,13 @@ span {
 .items{
     display: flex;
     gap: 10px;
-    /* height: 100px; */
+    height: 100px;
     background-color: ;
     height: 300px;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
+
 
 .item{
     margin-top: 15px;
@@ -372,6 +377,9 @@ gap: 4px;
     color: red;
 }
 .offer button{
+    border-radius: 3px;
+    padding: 3px;
+    width: 3.5rem;
     background-color: red;
     border: none;
     color: #fff;
@@ -381,6 +389,44 @@ gap: 4px;
     display: flex;
     gap: 4px;
 }
+
+
+
+.slide-btn {
+    position: absolute;
+    top: 222%;
+    height: 12%;
+    width: 40px;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.slide-btn:hover {
+    border: 2px solid white;
+}
+
+.slide-btn:first-child {
+    left: 35px;
+}
+
+.slide-btn:last-child {
+    right: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+    .slide-btn {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+
 
 /**footer**/
 footer {
