@@ -4,7 +4,11 @@
     border: border-box;
     font-family: sans-serif;
 }
-
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 .navbar {
     height: 60px;
     background-color: black;
@@ -312,6 +316,71 @@ span {
     color: #007185;
 }
 
+.Slide-shop-item{
+    height: 330px;
+    width: 97%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin: 15px;
+}
+
+.Slider{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 330px;
+    background-color:;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.items{
+    display: flex;
+    gap: 10px;
+    /* height: 100px; */
+    background-color: ;
+    height: 300px;
+}
+
+.item{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 220px;
+    width: 240px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+.item img{
+    padding: 10px 40px 10px 40px;
+    height: 200px;
+    /* width: 180px; */
+}
+
+.offers{
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+
+.offer{
+    color: red;
+}
+.offer button{
+    background-color: red;
+    border: none;
+    color: #fff;
+    margin: 2px;
+}
+.mrp{
+    display: flex;
+    gap: 4px;
+}
 
 /**footer**/
 footer {
