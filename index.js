@@ -119,7 +119,26 @@ items.innerHTML=join
 }
 data(todaydeal)
 
+// for sliding effects
+const leftBtn= document.querySelector(".l-btn");
+const rightBtn = document.querySelector(".r-btn");
 
+
+rightBtn.addEventListener("click",
+    function(event){
+        const conent=document.querySelector(".items");
+        conent.scrollLeft +=1100;
+        event.preventDefault();
+
+})
+leftBtn.addEventListener("click",
+    function(event){
+        const conent=document.querySelector(".items");
+        conent.scrollLeft -=1100;
+        event.preventDefault();
+
+})
+// ----------------------------------------------------------------------------------
 
 let KitchenSets=[
   {
@@ -193,6 +212,23 @@ items.innerHTML=join
 }
 data2(KitchenSets)
 
+const leftBtn1= document.querySelector(".l-btna");
+const rightBtn1 = document.querySelector(".l-btnb");
+rightBtn1.addEventListener("click",
+    function(event){
+        const conent1=document.querySelector(".kitchens");
+        conent1.scrollLeft +=1100;
+        event.preventDefault();
+
+})
+leftBtn1.addEventListener("click",
+    function(event){
+        const conent2=document.querySelector(".kitchens");
+        conent2.scrollLeft -=1100;
+        event.preventDefault();
+
+})
+// --------------------------------------------------------------------------------
 
 let scooters=[
   {
@@ -289,6 +325,23 @@ let join=newData.join("")
 items.innerHTML=join
 }
 data3(scooters)
+const leftBtn2= document.querySelector(".l-btnc");
+const rightBtn2 = document.querySelector(".l-btnd");
+rightBtn2.addEventListener("click",
+    function(event){
+        const conent=document.querySelector(".scooters");
+        conent.scrollLeft +=1100;
+        event.preventDefault();
+
+})
+leftBtn2.addEventListener("click",
+    function(event){
+        const conent=document.querySelector(".scooters");
+        conent.scrollLeft -=1100;
+        event.preventDefault();
+
+})
+// ----------------------------------------------------------------------------
 
 
 let newArrivals=[
@@ -375,6 +428,23 @@ items.innerHTML=join
 }
 data4(newArrivals)
 
+const leftBtn3= document.querySelector(".l-btne");
+const rightBtn3 = document.querySelector(".l-btnf");
+rightBtn3.addEventListener("click",
+    function(event){
+        const conent=document.querySelector(".arrivals");
+        conent.scrollLeft +=1100;
+        event.preventDefault();
+
+})
+leftBtn3.addEventListener("click",
+    function(event){
+        const conent=document.querySelector(".arrivals");
+        conent.scrollLeft -=1100;
+        event.preventDefault();
+
+})
+// ------------------------------------------------------------------------------
 
 let carpets=[
   {
@@ -440,13 +510,26 @@ items.innerHTML=join
 }
 data5(carpets)
 
+const leftBtn4= document.querySelector(".l-btng");
+const rightBtn4 = document.querySelector(".l-btnh");
+rightBtn4.addEventListener("click",
+    function(event){
+        const conent=document.querySelector(".carpets");
+        conent.scrollLeft +=1100;
+        event.preventDefault();
+
+})
+leftBtn4.addEventListener("click",
+    function(event){
+        const conent=document.querySelector(".carpets");
+        conent.scrollLeft -=1100;
+        event.preventDefault();
+
+})
+// ----------------------------------------------------------------------------
 
 
-
-
-
-
-
+// For Hero Section 
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -465,5 +548,7 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+
 
 

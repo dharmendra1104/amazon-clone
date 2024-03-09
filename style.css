@@ -318,8 +318,8 @@ span {
 
 /* Today deal items */
 
-.Slide-shop-item{
-    height: 330px;
+#Slide-shop-item{
+    height: 360px;
     width: 97%;
     background-color: white;
     padding: 20px 0px 20px;
@@ -345,7 +345,7 @@ span {
     gap: 10px;
     height: 100px;
     background-color: ;
-    height: 320px;
+    height: 350px;
     overflow-x: scroll;
     overflow-y: hidden;
 }
@@ -466,40 +466,52 @@ gap: 4px;
     overflow-y: hidden;
 }
 
-.slide-btn {
+/* for kitchen ,scooter, arrivel and carpets */
+
+.items-sets .Slider {
+    position: relative;
+  }
+  
+  .items-sets .l-btn,
+  .items-sets .r-btn {
     position: absolute;
-    top: 222%;
-    height: 12%;
-    width: 40px;
+    top: 45%;
     transform: translateY(-50%);
+    height: 80px;
+    width: 40px;
+    font-size: 25px;
     color: black;
     cursor: pointer;
-    padding: 10px;
-    font-size: 30px;
-    border: none;
     background-color: white;
     border-radius: 5px;
-}
-
-.slide-btn:hover {
-    border: 2px solid white;
-}
-
-.slide-btn:first-child {
-    left: 35px;
-}
-
-.slide-btn:last-child {
-    right: 35px;
-}
-
-@media only screen and (max-width: 768px) {
-    .slide-btn {
-        font-size: 18px;
-        padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .items-sets .l-btn {
+    left: 1px;
+  }
+  
+  .items-sets .r-btn {
+    right: 1px;
+  }
+  
+  .items-sets .l-btn:hover,
+  .items-sets .r-btn:hover {
+    background-color: #e2e7e6;
+  }
+  
+  /* Adjust size for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .items-sets .l-btn,
+    .items-sets .r-btn {
+      height: 30px;
+      width: 30px;
+      font-size: 16px;
     }
-}
-
+  }
+  
 
 
 /**footer**/
