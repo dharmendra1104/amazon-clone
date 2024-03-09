@@ -322,7 +322,7 @@ span {
     height: 330px;
     width: 97%;
     background-color: white;
-    padding: 20px 0px 15px;
+    padding: 20px 0px 20px;
     margin: 15px;
 }
 
@@ -337,6 +337,7 @@ span {
     display: flex;
     align-items: center;
     gap: 20px;
+    background-color:;
 }
 
 .items{
@@ -344,7 +345,7 @@ span {
     gap: 10px;
     height: 100px;
     background-color: ;
-    height: 300px;
+    height: 320px;
     overflow-x: scroll;
     overflow-y: hidden;
 }
@@ -389,8 +390,81 @@ gap: 4px;
     display: flex;
     gap: 4px;
 }
+.mrp p{
+    text-decoration-line: line-through;
+}
 
+.mrp p,.rate{
+    margin-top: 3px;
+    font-size:10.5px;
+}
 
+/* kitchen items */
+
+.items-sets{
+    height: 260px;
+    width: 97%;
+    background-color: white;
+    padding: 20px 0px 20px;
+    margin: 15px;
+}
+
+.kitchens{
+    display: flex;
+    gap: 10px;
+    height: 100px;
+    background-color: ;
+    height: 250px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.kitchen{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 220px;
+    width: 240px;
+    /* background-color: whitesmoke; */
+    border-radius: 8px;
+}
+
+/* Scooter store content */
+
+.scooters{
+    display: flex;
+    gap: 10px;
+    height: 100px;
+    background-color: ;
+    height: 250px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+/* arrivale store content */
+
+.arrivals{
+    display: flex;
+    gap: 10px;
+    height: 100px;
+    background-color: ;
+    height: 250px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+/* carpets store content */
+
+.carpets{
+    display: flex;
+    gap: 10px;
+    height: 100px;
+    background-color: ;
+    height: 250px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
 
 .slide-btn {
     position: absolute;

@@ -1,3 +1,453 @@
+let todaydeal=[
+  {
+    img: 'serve/today/4105IiC5tDL._AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/411iWoJEJjL._AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/51o13K4h3-L._AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/41tSQSq1xJL._AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/41-8D36eA5L._AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/41dEcQR7UnL._AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/41lois+jAAL._AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/41snmTn9mrL._AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/41TssgTTkwL._AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/41uGjvXbeBL._AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/51o13K4h3-L._AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/61I6Dgh3btL._SY695__AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/81v+JxkCi8L._SX679__AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+  {
+    img: 'serve/today/4105IiC5tDL._AC_SY200_.jpg',
+    offer: '23%off',
+    discountmount: '11,499',
+    Amount: '14,999.00',
+    itemName: 'Realme Narzo 60x 5G',
+  },
+   
+]
+
+function data(arr){
+  let newData=arr.map((item)=>{
+    return` <div class="item">
+    <img src="${item.img}" alt="#"></img>
+    <div class="offers">
+       <span class="offer"><button>${item.offer}</button>Limited time deal</span>
+       <span class="mrp"> &#x20b9;<span>${item.discountmount}</span><span class="rate">M.R.P.:</span><p>&#x20b9;${item.Amount}</p></span>
+       <p>${item.itemName}</p>
+    </div>
+    </div>  `
+  })
+
+let items=document.querySelector('.items')
+let join=newData.join("")
+// items.innerHTML=""
+items.innerHTML=join
+}
+data(todaydeal)
+
+
+
+let KitchenSets=[
+  {
+    img: 'serve/kitchen/31pBi+w0T-L._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/41segPlPLJL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/41smlkGBKNL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/51AnZzTdggL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/51ASu0nw8IL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/51Cq1exILLS._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/51IdFaKP1eL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/51Jyw5nuIDL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/61dU3iubSVL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/61KLLzjPZZL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/61kmAfCCJjL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/61lY3dPfZxL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/61Mn8AcOsUL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/61xXn6KEQLL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/61Zq94wig4L._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/71J7jrDJwlL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/71Mig6ty0TL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/kitchen/515yXaO6+UL._AC_SY200_.jpg',
+  },
+]
+
+function data2(arr){
+  let newData=arr.map((item)=>{
+    return` <div class="kitchen">
+    <img src="${item.img}" alt="#"></img>
+ 
+    </div>  `
+  })
+
+let items=document.querySelector('.kitchens')
+let join=newData.join("")
+// items.innerHTML=""
+items.innerHTML=join
+}
+data2(KitchenSets)
+
+
+let scooters=[
+  {
+    img: 'serve/moter bike/71ZylCJbG4L._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51Zsk80ytcL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51Zsk80ytcL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/511sS2vAj6L._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/61Lg7B0x5NL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/71QHotlsT8L._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/41tXGqoTsmL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/61AM3f2Lu4L._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/516oKuGsePL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/410tpnv2PPL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51tuA+NpL-L._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51OZs8i3CzL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51Y-fw9a7DL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51BaFSr-PLL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51CpQWTUn8L._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51N4Rot3QwL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51xU2ZP9UvL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51Y-fw9a7DL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51OZs8i3CzL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51BT8hgnqFL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51FPJP5L1YL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51PLDJqOkrL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51yoW0ne7vL._AC_SY200_ (1).jpg',
+  },
+  {
+    img: 'serve/moter bike/516O0WxnFHL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/51FPJP5L1YL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/moter bike/516O0WxnFHL._AC_SY200_.jpg',
+  },
+]
+
+function data3(arr){
+  let newData=arr.map((item)=>{
+    return` <div class="kitchen">
+    <img src="${item.img}" alt="#"></img>
+ 
+    </div>  `
+  })
+
+let items=document.querySelector('.scooters')
+let join=newData.join("")
+// items.innerHTML=""
+items.innerHTML=join
+}
+data3(scooters)
+
+
+let newArrivals=[
+  {
+    img: 'serve/new arrivals/31N27Oq6uOL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/51ZtbI7hPKL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/61fB9ZnXHuL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/61QHbJch75L._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/71+K5QXQaqL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/71WJd3yDX8L._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/81Am1j952oL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/81qv43XpBCL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/81ZgIAr8C6L._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/517wmQ+oi4L._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/518y1zTuTxL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/615jDPv01BL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/718nycdMDLL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/816atz++wqL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/81Am1j952oL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/31N27Oq6uOL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/furniture/61rjjbufLXL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/61fB9ZnXHuL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/furniture/513WC6czKZL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/furniture/717GPiLTPyL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/new arrivals/518y1zTuTxL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/furniture/81QiNyrMYEL._AC_SY200_.jpg',
+  },
+]
+
+function data4(arr){
+  let newData=arr.map((item)=>{
+    return` <div class="kitchen">
+    <img src="${item.img}" alt="#"></img>
+ 
+    </div>  `
+  })
+
+let items=document.querySelector('.arrivals')
+let join=newData.join("")
+// items.innerHTML=""
+items.innerHTML=join
+}
+data4(newArrivals)
+
+
+let carpets=[
+  {
+    img: 'serve/carpet/81sOYks3oOL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/61dvdyXlglL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/81gt-fM1lUL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/81HgHwc+ohL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/81x8WczgQTL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/81lblRwhUBL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/81sOYks3oOL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/81x8WczgQTL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/81jukB8qziL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/81sOYks3oOL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/81x8WczgQTL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/51JtNkKEZXL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/91JVuyYEcfL._AC_SY200_.jpg',
+  },
+  {
+    img: 'serve/carpet/91vgi4gf+QL._AC_SY200_ (1).jpg',
+  },
+  {
+    img: 'serve/carpet/91vgi4gf+QL._AC_SY200_ (2).jpg',
+  },
+ 
+]
+
+function data5(arr){
+  let newData=arr.map((item)=>{
+    return` <div class="kitchen">
+    <img src="${item.img}" alt="#"></img>
+ 
+    </div>  `
+  })
+
+let items=document.querySelector('.carpets')
+let join=newData.join("")
+// items.innerHTML=""
+items.innerHTML=join
+}
+data5(carpets)
+
+
+
+
+
+
+
+
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -17,20 +467,3 @@ function showDivs(n) {
 }
 
 
-// let slidetoday = 1;
-// showDivs(slidetoday);
-
-// function slider(n) {
-//   showDivs(slidetoday += n);
-// }
-
-// function showDivs(n) {
-//   var i;
-//   var x = document.getElementsByClassName("item");
-//   if (n > x.length) {slidetoday = 1}
-//   if (n < 1) {slidetoday = x.length}
-//   for (i = 0; i < x.length; i++) {
-//               n++
-//   }
-
-// }
