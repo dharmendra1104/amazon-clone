@@ -27,17 +27,8 @@
     }
 
     .foot-panel2{
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
-          margin: auto;
+          height: 100%;
     }
-    .foot-panel2  ul{
-        width: 70%; 
-    }
-    .span{
-        width: 20%;
-        display: flex;
-        /* flex-wrap: wrap; */
-    }
+
+
   }
