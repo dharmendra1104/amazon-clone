@@ -550,5 +550,12 @@ function showDivs(n) {
 }
 
 
+function toggleSidebar() {
+  let hide= document.querySelector(".hide")
+  var sidebar = document.querySelector('.sidebar');
+  sidebar.style.transform = (sidebar.style.transform === 'translateX(0px)' || sidebar.style.transform === '') ? 'translateX(-350px)' : 'translateX(0px)';
+  hide.style.display=`none`
+  classlist.toggle('hide')
+}
 
 

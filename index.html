@@ -8,11 +8,75 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
   <title>Amazon</title>
 </head>
 
 <body>
-  <header>
+
+  <!-- left slide menu bar -->
+  <div class="sidebar">
+    <div class="hdn-head">
+      <div class="sign">
+        <i class="fa-solid fa-circle-user"></i>
+        <h2>Hello, Sign in</h2>
+      </div>
+        <div class="xmark" onclick="toggleSidebar()"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    <div class="hdn-content">
+        <h3>Digital Content & Devices</h3>
+        <ul>
+            <div>
+                <li>Amazon Music</li><i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div>
+                <li>Kindle E-Readers & Books</li><i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div>
+                <li>Appstore for Android</li><i class="fa-solid fa-angle-right"></i>
+            </div>
+        </ul>
+        <div class="line"></div>
+    </div>
+    <div class="hdn-content">
+        <h3>Shop By Department</h3>
+        <ul>
+            <div>
+                <li>Electronics</li><i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div>
+                <li>Computers</li><i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div>
+                <li>Smart Homes</li><i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div>
+                <li>Arts & Crafts</li><i class="fa-solid fa-angle-right"></i>
+            </div>
+        </ul>
+        <div class="line"></div>
+    </div>
+    <div class="hdn-content">
+        <h3>Programs & Features</h3>
+        <ul>
+            <div>
+                <li>Gift Cards & Mobile Recharges</li><i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div>
+                <li>Flight Tickets</li><i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div>
+                <li>Clearance Store</li><i class="fa-solid fa-angle-right"></i>
+            </div>
+        </ul>
+        <div class="line"></div>
+    </div>
+</div>
+<!-- <div class="xmark" onclick="toggleSidebar()"><i class="fa-solid fa-xmark"></i></div> -->
+
+
+
+  <header class="hide">
     <div class="navbar">
       <div class="nav-logo border">
         <div class="logo"></div>
@@ -69,13 +133,12 @@
         Cart
       </div>
     </div>
-
   </header>
 
-  <div class="panel">
-    <div class="menu">
-      <i class="fa-solid fa-bars"></i>
-      All
+  <div class="panel hide">
+    <div class="menu" onclick="toggleSidebar()">
+    <i class="fa-solid fa-bars"></i>
+     All
     </div>
     <div class="panel-ops">
       <p>Amazon miniTV</p>

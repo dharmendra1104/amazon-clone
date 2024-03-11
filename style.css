@@ -18,6 +18,9 @@ header{
     justify-content: space-evenly;
     width: 100%;
 }
+.hide{
+    /* display: none; */
+}
 
 .nav-logo {
     position: relative;
@@ -171,6 +174,9 @@ span {
     background-color: ;
     display: flex;
     gap: 8px;
+    border: 1px solid white;
+    padding: 3px;
+    cursor: pointer;
 }
 
 .panel-ops p {
@@ -657,4 +663,76 @@ ul a {
     align-items: center;
     padding: 20px;
     margin-top:15px;
+}
+
+
+
+.sidebar {
+    background-color: white;
+    width: 350px;
+    height: 100%;
+    transform: translateX(-350px);
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1000;
+    overflow-y: scroll;
+    /* box-shadow: 2px 2px 30px black; */
+}
+
+.hdn-head {
+    background-color: #232f3e;
+    height: 70px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hdn-head h2 {
+    line-height: 60px;
+    color: white;
+}
+
+.sign {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.sign>i {
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.hdn-content {
+    padding: 15px;
+}
+
+.hdn-content h3 {
+    padding: 20px 20px;
+    color: rgb(39, 39, 39);
+}
+
+.hdn-content ul div {
+    display: flex;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: rgb(70, 70, 70);
+    font-size: 14px;
+    padding: 15px 20px 20px 0px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.xmark {
+    left: 0;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: ;
+}
+
+.xmark i {
+    color: white;
 }
