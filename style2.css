@@ -1,34 +1,43 @@
 @media screen and (max-width: 1060px) {
     header {
-  
+        height: 50px;
+
     }
 
-    .panel{
-    
+    .panel {
+        height: 100px;
     }
-    .nav-search{
+
+    .panel-ops,.panel-deal {
+        /* display: flex; */
+        /* justify-content: space-around; */
+    }
+
+    .nav-search {
         width: 50%;
-        
+
     }
-    .box{
+
+    .box {
         width: 50%;
         height: auto;
     }
 
-    .shop-section{
+    .shop-section {
         display: flex;
         justify-content: space-around;
         /* flex-direction: column; */
     }
-    .box img{
-         width: 100%;
-         display: flex;
-         flex-direction: column;
+
+    .box img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
-    .foot-panel2{
-          height: 100%;
+    .foot-panel2 {
+        height: 100%;
     }
 
 
-  }
+}

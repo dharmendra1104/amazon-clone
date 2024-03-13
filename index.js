@@ -550,12 +550,53 @@ function showDivs(n) {
 }
 
 
+// for menu button
+
+let navbar=document.querySelector("header")
+let panel=document.querySelector(".panel")
+var sidebar = document.querySelector('.sidebar');
+var close = document.querySelector('.xmark');
+let shop_section = document.querySelector('.shop-section');
+let hero_section = document.querySelector('.hero-section');
+let footer= document.querySelector('Footer');
+let body= document.querySelector('body');
 function toggleSidebar() {
-  let hide= document.querySelector(".hide")
-  var sidebar = document.querySelector('.sidebar');
-  sidebar.style.transform = (sidebar.style.transform === 'translateX(0px)' || sidebar.style.transform === '') ? 'translateX(-350px)' : 'translateX(0px)';
-  hide.style.display=`none`
-  classlist.toggle('hide')
+sidebar.classList.add('sidebarClose')
+  // sidebar.style.transform = (sidebar.style.transform === 'translateX(0px)' || sidebar.style.transform === '') ? 'translateX(-350px)' : 'translateX(0px)';
+  navbar.classList.add("hide")
+  panel.classList.add("hide")
+  shop_section.classList.add("hide")
+  hero_section.classList.add("hide")
+  footer.classList.add("hide")
+  body.style.backgroundColor=`#222831`
 }
 
+close.addEventListener('click',()=>{
+  sidebar.classList.remove('sidebarClose')
+  // sidebar.style.transform = (sidebar.style.transform === 'translateX(0px)' || sidebar.style.transform === '') ? 'translateX(-350px)' : 'translateX(0px)';
+  navbar.classList.remove("hide")
+  panel.classList.remove("hide")
+  shop_section.classList.remove("hide")
+  hero_section.classList.remove("hide")
+  footer.classList.remove("hide")
+})
 
+
+// For Account and List 
+let tringle=document.querySelector(".triangle")
+let singin=document.querySelector(".nav-singin")
+let sign=document.querySelector(".hdn-sign")
+singin.addEventListener("click",()=>{
+   sign.classList.toggle("show")
+   tringle.classList.toggle("show")
+})
+
+// for language list
+let lang=document.querySelector(".lang")
+let triangl=document.querySelector(".triangl")
+let language=document.querySelector(".language")
+lang.addEventListener('click',()=>{
+  triangl.classList.toggle("show")
+  language.classList.toggle("show")
+  console.log("hello")
+})

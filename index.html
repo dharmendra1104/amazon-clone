@@ -21,64 +21,118 @@
         <i class="fa-solid fa-circle-user"></i>
         <h2>Hello, Sign in</h2>
       </div>
-        <div class="xmark" onclick="toggleSidebar()"><i class="fa-solid fa-xmark"></i></div>
+      <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
     </div>
     <div class="hdn-content">
-        <h3>Digital Content & Devices</h3>
-        <ul>
-            <div>
-                <li>Amazon Music</li><i class="fa-solid fa-angle-right"></i>
-            </div>
-            <div>
-                <li>Kindle E-Readers & Books</li><i class="fa-solid fa-angle-right"></i>
-            </div>
-            <div>
-                <li>Appstore for Android</li><i class="fa-solid fa-angle-right"></i>
-            </div>
-        </ul>
-        <div class="line"></div>
+      <h3>Digital Content & Devices</h3>
+      <ul>
+        <div>
+          <li>Amazon Music</li><i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div>
+          <li>Kindle E-Readers & Books</li><i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div>
+          <li>Appstore for Android</li><i class="fa-solid fa-angle-right"></i>
+        </div>
+      </ul>
+      <div class="line"></div>
     </div>
     <div class="hdn-content">
-        <h3>Shop By Department</h3>
-        <ul>
-            <div>
-                <li>Electronics</li><i class="fa-solid fa-angle-right"></i>
-            </div>
-            <div>
-                <li>Computers</li><i class="fa-solid fa-angle-right"></i>
-            </div>
-            <div>
-                <li>Smart Homes</li><i class="fa-solid fa-angle-right"></i>
-            </div>
-            <div>
-                <li>Arts & Crafts</li><i class="fa-solid fa-angle-right"></i>
-            </div>
-        </ul>
-        <div class="line"></div>
+      <h3>Shop By Department</h3>
+      <ul>
+        <div>
+          <li>Electronics</li><i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div>
+          <li>Computers</li><i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div>
+          <li>Smart Homes</li><i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div>
+          <li>Arts & Crafts</li><i class="fa-solid fa-angle-right"></i>
+        </div>
+      </ul>
+      <div class="line"></div>
     </div>
     <div class="hdn-content">
-        <h3>Programs & Features</h3>
-        <ul>
-            <div>
-                <li>Gift Cards & Mobile Recharges</li><i class="fa-solid fa-angle-right"></i>
-            </div>
-            <div>
-                <li>Flight Tickets</li><i class="fa-solid fa-angle-right"></i>
-            </div>
-            <div>
-                <li>Clearance Store</li><i class="fa-solid fa-angle-right"></i>
-            </div>
-        </ul>
-        <div class="line"></div>
+      <h3>Programs & Features</h3>
+      <ul>
+        <div>
+          <li>Gift Cards & Mobile Recharges</li><i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div>
+          <li>Flight Tickets</li><i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div>
+          <li>Clearance Store</li><i class="fa-solid fa-angle-right"></i>
+        </div>
+      </ul>
+      <div class="line"></div>
     </div>
-</div>
-<!-- <div class="xmark" onclick="toggleSidebar()"><i class="fa-solid fa-xmark"></i></div> -->
+  </div>
+
+  <!-- For Language List -->
+  <div class="language show">
+    <ul class="select-lang">
+      <li><input type="radio" name="language">English-EN</li>
+      <hr>
+      <li><input type="radio" name="language">हिन्दी - HI</li>
+      <li><input type="radio" name="language">தமிழ் - TA</li>
+      <li><input type="radio" name="language">తెలుగు - TE</li>
+      <li><input type="radio" name="language">ಕನ್ನಡ - KN</li>
+      <li><input type="radio" name="language">മലയാളം - ML</li>
+      <li><input type="radio" name="language">বাংলা - BN</li>
+      <li><input type="radio" name="language">मराठी - MR</li>
+    </ul>
+    <ul class="select-lang-1">
+      <li><a href="">Learn more</a></li>
+      <hr>
+      <span><img src="India-flag-icon-on-transparent-background-PNG-removebg-preview.png" alt="#">
+        <p>You are shopping on Amazon.in</p>
+      </span>
+      <li><a href="">Change country/region.</a></li>
+    </ul>
+  </div>
+
+  <!-- For Account and List -->
+
+  <div class="hdn-sign show">
+    <div class="hdn-table">
+      <div>
+        <h3>Your Lists</h3>
+        <ul>
+          <li>Create a List</li>
+          <li>Find a List & Registry</li>
+          <li>Amazon Smile Charity Lists</li>
+        </ul>
+      </div>
+      <div class="hdn-line"></div>
+      <div>
+        <h3>Your Account</h3>
+        <ul>
+          <li>Account</li>
+          <li>Orders</li>
+          <li>Recommendations</li>
+          <li>Browsing History</li>
+          <li>Watchlist</li>
+          <li>Video Purchases</li>
+          <li>Kindle Unlimited</li>
+          <li>Content & Devices</li>
+          <li>Subscribe & Save Items</li>
+          <li>Membership</li>
+          <li>Music Library</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 
 
-  <header class="hide">
+  <header>
     <div class="navbar">
-      <div class="nav-logo border">
+      <div class="nav-logo">
         <div class="logo"></div>
         <!-- <span>.in</span> -->
       </div>
@@ -91,12 +145,20 @@
       </div>
       <div class="nav-search">
         <select class="search-select">
-          <option>All</option>
-          <option>Alexa Skills</option>
+          <option title="abc">All</option>
           <option>All Category</option>
-          <option>Amazon Device</option>
+          <option>Alexa Skills</option>
+          <option>Amazon Devices</option>
           <option>Amazon Fashion</option>
           <option>Amazon Pharmacy</option>
+          <option>Appliances</option>
+          <option>Apps & Games</option>
+          <option>Audiable Audiobook</option>
+          <option>Baby</option>
+          <option>Beuty</option>
+          <option>Books</option>
+          <option>Car & Moterbike</option>
+          <option>Clothing & Accessories</option>
         </select>
         <input placeholder="Search Amazon" class="search-input">
         <div class="search-icon">
@@ -104,24 +166,22 @@
 
         </div>
       </div>
-      <div class="lang">
-        <img src="India-flag-icon-on-transparent-background-PNG-removebg-preview.png" alt="#">
-        <!-- <h5>EN <span class="down"><select name="" id=""></select><i class="fa-solid fa-caret-down"></i></span></h5> -->
-        <h5>EN <span class="down"><select name="" id="">
-              <option value="">English</option>
-              <option value="">हिन्दी - HI</option>
-              <option value="">தமிழ் - TA</option>
-              <option value="">తెలుగు - TE </option>
-              <option value="">ಕನ್ನಡ - KN</option>
-              <option value="">മലയാളം - ML</option>
-              <option value="">বাংলা - BN</option>
-              <option value="">मराठी - MR</option>
-            </select></span></h5>
+      <div class="lang border">
+        <div class="lan">
+          <img src="India-flag-icon-on-transparent-background-PNG-removebg-preview.png" alt="#">
+          <!-- <h5>EN <span class="down"><select name="" id=""></select><i class="fa-solid fa-caret-down"></i></span></h5> -->
+          <h5>EN
+            <i class="fa-solid fa-caret-down"></i>
+          </h5>
+        </div>
+        <div class="triangl show"><i class="fa-solid fa-triangle"></i></div>
       </div>
       <div class="nav-singin border">
         <p><span>Hello, sign in</span></p>
-        <p class="nav-secpanel-allond">Account & List <span class="down"><i class="fa-solid fa-caret-down"></i></span>
+        <p class="nav-secpanel-allond">Account & List
+          <span class="down"><i class="fa-solid fa-caret-down"></i></span>
         </p>
+        <div class="triangle show"><i class="fa-solid fa-triangle"></i></div>
       </div>
       <div class="nav-return border">
         <p><span>Returns</span></p>
@@ -135,10 +195,10 @@
     </div>
   </header>
 
-  <div class="panel hide">
+  <div class="panel">
     <div class="menu" onclick="toggleSidebar()">
-    <i class="fa-solid fa-bars"></i>
-     All
+      <i class="fa-solid fa-bars"></i>
+      All
     </div>
     <div class="panel-ops">
       <p>Amazon miniTV</p>
@@ -377,13 +437,11 @@
         <div class="info">
           <h2>Today's Deals</h2> <span><a href="">See all deals</a></span>
         </div>
-        <!-- <button class="slide-btn" onclick="slider()">&#10094;</button> -->
-          <div class="l-btn"><i class="fa-solid fa-chevron-left"></i></div>
-          <div class="r-btn"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="l-btn"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="r-btn"><i class="fa-solid fa-chevron-right"></i></div>
         <div class="items">
           <!-- Today item -->
         </div>
-        <!-- <button class="slide-btn" onclick="slider()">&#10095;</button> -->
       </div>
     </div>
 
@@ -394,13 +452,11 @@
         <div class="info">
           <h2>Today's Deals</h2> <span><a href="">See all deals</a></span>
         </div>
-        <!-- <button class="slide-btn" onclick="slider()">&#10094;</button> -->
-          <div class="l-btn l-btna "><i class="fa-solid fa-chevron-left"></i></div>
-          <div class="r-btn l-btnb"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="l-btn l-btna "><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="r-btn l-btnb"><i class="fa-solid fa-chevron-right"></i></div>
         <div class="kitchens">
-          <!-- Today item -->
+          <!-- kitchen item -->
         </div>
-        <!-- <button class="slide-btn" onclick="slider()">&#10095;</button> -->
       </div>
     </div>
 
@@ -411,13 +467,11 @@
         <div class="info">
           <h2>Today's Deals</h2> <span><a href="">See all deals</a></span>
         </div>
-        <!-- <button class="slide-btn" onclick="slider()">&#10094;</button> -->
-          <div class="l-btn l-btnc"><i class="fa-solid fa-chevron-left"></i></div>
-          <div class="r-btn l-btnd"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="l-btn l-btnc"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="r-btn l-btnd"><i class="fa-solid fa-chevron-right"></i></div>
         <div class="scooters">
-          <!-- Today item -->
+          <!-- Electric item -->
         </div>
-        <!-- <button class="slide-btn" onclick="slider()">&#10095;</button> -->
       </div>
     </div>
 
@@ -429,11 +483,9 @@
         </div>
         <div class="l-btn l-btne"><i class="fa-solid fa-chevron-left"></i></div>
         <div class="r-btn l-btnf"><i class="fa-solid fa-chevron-right"></i></div>
-        <!-- <button class="slide-btn" onclick="slider()">&#10094;</button> -->
         <div class="arrivals">
           <!-- Today item -->
         </div>
-        <!-- <button class="slide-btn" onclick="slider()">&#10095;</button> -->
       </div>
     </div>
 
@@ -443,21 +495,14 @@
         <div class="info">
           <h2>Today's Deals</h2> <span><a href="">See all deals</a></span>
         </div>
-        <!-- <button class="slide-btn" onclick="slider()">&#10094;</button> -->
-          <div class="l-btn l-btng"><i class="fa-solid fa-chevron-left"></i></div>
-          <div class="r-btn l-btnh"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="l-btn l-btng"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="r-btn l-btnh"><i class="fa-solid fa-chevron-right"></i></div>
         <div class="carpets">
           <!-- Today item -->
         </div>
-        <!-- <button class="slide-btn" onclick="slider()">&#10095;</button> -->
       </div>
     </div>
-
-
   </div>
-
-
-
 
   <!-- Fotter Part -->
   <Footer>
@@ -498,7 +543,6 @@
         <a>Amazon App Download</a>
         <a> Help</a>
       </ul>
-
     </div>
 
     <div class="foot-pane13">

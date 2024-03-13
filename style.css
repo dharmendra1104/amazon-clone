@@ -4,11 +4,13 @@
     border: border-box;
     font-family: sans-serif;
 }
-header{
+
+header {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
+
 .navbar {
     height: 60px;
     background-color: black;
@@ -18,8 +20,9 @@ header{
     justify-content: space-evenly;
     width: 100%;
 }
-.hide{
-    /* display: none; */
+
+.hide {
+    display: none !important;
 }
 
 .nav-logo {
@@ -31,7 +34,6 @@ header{
     background-color: ;
     margin: 10px;
 }
-
 
 .nav-logo span {
     margin-top: 14px;
@@ -47,6 +49,7 @@ header{
 
 .border {
     border: 1px solid transparent;
+    padding: 5px;
 }
 
 .border span {
@@ -79,10 +82,11 @@ header{
 .nav-search {
     display: flex;
     justify-content: space-evenly;
-    background-color: pink;
+    background-color: black;
     width: 620px;
     height: 40px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
+    border: 2px solid transparent;
 }
 
 .search-select {
@@ -114,20 +118,33 @@ header{
 
 .nav-search:hover {
     border: 2px solid orange;
+    border-radius: 7px;
 }
 
 .lang {
     margin-top: 5px;
     display: flex;
+    flex-direction: column;
     gap: 3px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.lan {
+    display: flex;
 }
 
 .lang h5 {
     margin-top: 3px;
+    display: ;
 }
 
 .lang img {
     height: 20px;
+}
+
+.nav-singin {
+    cursor: pointer;
 }
 
 .down {
@@ -183,14 +200,24 @@ span {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.panel-ops {
+    margin-left: 5px;
+}
+
 .panel-ops p {
-    display: inline;
-    margin-left: 20px;
+    display: inline-block;
+    margin: 5 10px 10px 0;
+    padding: 3px;
+    border: 1px solid transparent;
+}
+
+.panel-ops p:hover {
+    border-color: white;
 }
 
 .panel-ops {
     width: 70%;
-    font-size: o.85rem;
+    font-size: o.95rem;
 }
 
 .panel-deal {
@@ -198,10 +225,15 @@ span {
     font-weight: 700px;
     width: 32%;
     background-color: ;
+    padding: 4px;
+    border: 1px solid transparent;
+}
+
+.panel-deal:hover {
+    border: 1px solid white;
 }
 
 .hero-section {
-    /* background-image: url("hero_image.jpg") ; */
     height: 350px;
     background-size: cover;
     display: flex;
@@ -324,7 +356,7 @@ span {
 
 /* Today deal items */
 
-#Slide-shop-item{
+#Slide-shop-item {
     height: 360px;
     width: 97%;
     background-color: white;
@@ -332,21 +364,21 @@ span {
     margin: 15px;
 }
 
-.Slider{
+.Slider {
     margin-left: 1rem;
     margin-right: 1rem;
     height: 330px;
-    background-color:;
+    background-color: ;
 }
 
-.info{
+.info {
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color:;
+    background-color: ;
 }
 
-.items{
+.items {
     display: flex;
     gap: 10px;
     height: 100px;
@@ -357,7 +389,7 @@ span {
 }
 
 
-.item{
+.item {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
@@ -368,22 +400,23 @@ span {
     border-radius: 8px;
 }
 
-.item img{
+.item img {
     padding: 10px 40px 10px 40px;
     height: 200px;
     /* width: 180px; */
 }
 
-.offers{
-display: flex;
-flex-direction: column;
-gap: 4px;
+.offers {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
-.offer{
+.offer {
     color: red;
 }
-.offer button{
+
+.offer button {
     border-radius: 3px;
     padding: 3px;
     width: 3.5rem;
@@ -392,22 +425,25 @@ gap: 4px;
     color: #fff;
     margin: 2px;
 }
-.mrp{
+
+.mrp {
     display: flex;
     gap: 4px;
 }
-.mrp p{
+
+.mrp p {
     text-decoration-line: line-through;
 }
 
-.mrp p,.rate{
+.mrp p,
+.rate {
     margin-top: 3px;
-    font-size:10.5px;
+    font-size: 10.5px;
 }
 
 /* kitchen items */
 
-.items-sets{
+.items-sets {
     height: 260px;
     width: 97%;
     background-color: white;
@@ -415,7 +451,7 @@ gap: 4px;
     margin: 15px;
 }
 
-.kitchens{
+.kitchens {
     display: flex;
     gap: 10px;
     height: 100px;
@@ -425,7 +461,7 @@ gap: 4px;
     overflow-y: hidden;
 }
 
-.kitchen{
+.kitchen {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
@@ -438,7 +474,7 @@ gap: 4px;
 
 /* Scooter store content */
 
-.scooters{
+.scooters {
     display: flex;
     gap: 10px;
     height: 100px;
@@ -450,7 +486,7 @@ gap: 4px;
 
 /* arrivale store content */
 
-.arrivals{
+.arrivals {
     display: flex;
     gap: 10px;
     height: 100px;
@@ -462,7 +498,7 @@ gap: 4px;
 
 /* carpets store content */
 
-.carpets{
+.carpets {
     display: flex;
     gap: 10px;
     height: 100px;
@@ -476,10 +512,10 @@ gap: 4px;
 
 .items-sets .Slider {
     position: relative;
-  }
-  
-  .items-sets .l-btn,
-  .items-sets .r-btn {
+}
+
+.items-sets .l-btn,
+.items-sets .r-btn {
     position: absolute;
     top: 45%;
     transform: translateY(-50%);
@@ -493,37 +529,38 @@ gap: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .items-sets .l-btn {
+}
+
+.items-sets .l-btn {
     left: 1px;
-  }
-  
-  .items-sets .r-btn {
+}
+
+.items-sets .r-btn {
     right: 1px;
-  }
-  
-  .items-sets .l-btn:hover,
-  .items-sets .r-btn:hover {
+}
+
+.items-sets .l-btn:hover,
+.items-sets .r-btn:hover {
     background-color: #e2e7e6;
-  }
-  
-  /* Adjust size for smaller screens */
-  @media only screen and (max-width: 768px) {
+}
+
+/* Adjust size for smaller screens */
+@media only screen and (max-width: 768px) {
+
     .items-sets .l-btn,
     .items-sets .r-btn {
-      height: 30px;
-      width: 30px;
-      font-size: 16px;
+        height: 30px;
+        width: 30px;
+        font-size: 16px;
     }
-  }
-  
+}
+
 
 
 /**footer**/
 footer {
     margin-top: 15px;
-    background-color:#37475a;
+    background-color: #37475a;
     font-size: 13px;
 }
 
@@ -568,14 +605,14 @@ ul a {
     width: 100%;
 }
 
-.foot-logo{
+.foot-logo {
     display: flex;
     background-color: ;
     justify-content: space-between;
     width: 20%;
 }
 
-.foot-logo button{
+.foot-logo button {
     margin: 10px;
     height: 35px;
     width: 100px;
@@ -597,72 +634,75 @@ ul a {
 
 }
 
-.foot-panel4{
+.foot-panel4 {
     height: 30px;
     color: white;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;    
+    margin-top: 20px;
 }
 
-.foot-pane{
-    width:71%;
+.foot-pane {
+    width: 71%;
     margin: 20px;
     text-align: center;
 }
-.foot-pane span a{
+
+.foot-pane span a {
     color: #e2e7e6f1;
     text-decoration: none;
     margin: 5px;
 }
-.foot-pane span:hover{
+
+.foot-pane span:hover {
     text-decoration: underline;
 }
 
-.foot-panel5{
+.foot-panel5 {
     color: white;
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-    background-color:;
+    background-color: ;
     padding: 12px;
     /* flex-wrap: wrap; */
     /* width: 100%; */
     gap: 20px;
 }
 
-.uper-content,.down-content{
+.uper-content,
+.down-content {
     width: 80%;
     background-color: ;
     display: flex;
     gap: 30px;
 }
 
-.content{
+.content {
     width: 22%;
     margin: px;
     background-color: ;
 }
 
-.content p{
+.content p {
     color: #e2e7e6e1;
 }
 
-.content:hover{
-    text-decoration: underline ;
+.content:hover {
+    text-decoration: underline;
 }
 
-.privacy{
+.privacy {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
 
@@ -677,6 +717,10 @@ ul a {
     z-index: 1000;
     overflow-y: scroll;
     /* box-shadow: 2px 2px 30px black; */
+}
+
+.sidebarClose {
+    transform: translateX(0);
 }
 
 .hdn-head {
@@ -735,4 +779,198 @@ ul a {
 
 .xmark i {
     color: white;
+}
+
+
+/* for Account List */
+.show {
+    display: none;
+}
+
+.active {
+    width: 100%;
+    z-index: 100;
+}
+
+.active-1 {
+    top: 70px;
+    width: 100%;
+    z-index: 99;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+.fa-xmark.active {
+    display: block;
+}
+
+.hdn-sign.active {
+    display: block;
+}
+
+.triangle.active {
+    display: block;
+}
+
+.triangle {
+    position: absolute;
+    z-index: 2;
+    /* display:; */
+    right: 213px;
+    top: 41px;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    /* display:; */
+    /* transition:all 2s; */
+    border: 10px solid blue;
+    border-color: transparent transparent white transparent;
+}
+
+.triangle i {
+    z-index: 1000;
+    background-color: #222f3d;
+    color: #222f3d;
+}
+
+.hdn-sign {
+    position: absolute;
+    z-index: 101;
+    transition: all 2s;
+    /* display: none; */
+    width: 500px;
+    height: 380px;
+    top: 60px;
+    right: 80px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.hdn-table {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.hdn-table h3 {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.hdn-table li {
+    color: rgb(84, 84, 84);
+    font-size: 13px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.hdn-line {
+    width: 0.5px;
+    color: black;
+    background-color: rgb(190, 190, 190);
+    height: 280px;
+}
+
+.stop-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+
+/* for language selection bar */
+
+.language {
+    position: absolute;
+    z-index: 101;
+    transition: all 2s;
+    /* display: none; */
+    width: 250px;
+    height: 400px;
+    top: 60px;
+    right: 173px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.language ul {
+    list-style: none;
+}
+
+.language hr {
+    width: 80%;
+    margin-left: 28px;
+}
+
+.select-lang {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.select-lang li {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.select-lang li input {
+    height: 17px;
+    width: 17px;
+}
+
+.select-lang-1 {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 15px;
+}
+
+.select-lang-1 span {
+    display: flex;
+}
+
+.select-lang-1 span p {
+    margin-top: 4px;
+}
+
+.select-lang-1 li {
+    margin-left: 1.6rem;
+}
+
+.select-lang-1 li a {
+    text-decoration: none;
+    color: #007185;
+}
+
+.select-lang-1 img {
+    height: 20px;
+}
+
+.triangl {
+    position: absolute;
+    z-index: 2;
+    /* display:; */
+    right: 357px;
+    top: 40px;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    /* display:; */
+    transition: all 2s;
+    border: 10px solid blue;
+    border-color: transparent transparent white transparent;
+}
+
+.triangl i {
+    z-index: 1000;
+    /* background-color: #222f3d; */
+    background-color: #fff;
+    color: #222f3d;
+}
+
+.show-1 {
+    display: none;
 }
