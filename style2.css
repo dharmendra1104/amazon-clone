@@ -8,7 +8,8 @@
         height: 100px;
     }
 
-    .panel-ops,.panel-deal {
+    .panel-ops,
+    .panel-deal {
         /* display: flex; */
         /* justify-content: space-around; */
     }

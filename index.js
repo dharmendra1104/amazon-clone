@@ -549,6 +549,10 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
+let intervalId = setInterval(function() {
+  plusDivs(1); 
+}, 3000); 
+
 
 // for menu button
 
@@ -591,6 +595,7 @@ singin.addEventListener("click",()=>{
    tringle.classList.toggle("show")
 })
 
+
 // for language list
 let lang=document.querySelector(".lang")
 let triangl=document.querySelector(".triangl")
@@ -598,5 +603,5 @@ let language=document.querySelector(".language")
 lang.addEventListener('click',()=>{
   triangl.classList.toggle("show")
   language.classList.toggle("show")
-  console.log("hello")
+  // console.log("hello")
 })
