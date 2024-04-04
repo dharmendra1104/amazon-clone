@@ -590,7 +590,7 @@ close.addEventListener('click',()=>{
 let tringle=document.querySelector(".triangle")
 let singin=document.querySelector(".nav-singin")
 let sign=document.querySelector(".hdn-sign")
-singin.addEventListener("click",()=>{
+singin.addEventListener('click',()=>{
    sign.classList.toggle("show")
    tringle.classList.toggle("show")
 })
@@ -600,7 +600,7 @@ singin.addEventListener("click",()=>{
 let lang=document.querySelector(".lang")
 let triangl=document.querySelector(".triangl")
 let language=document.querySelector(".language")
-lang.addEventListener('click',()=>{
+lang.addEventListener('mouseover',()=>{
   triangl.classList.toggle("show")
   language.classList.toggle("show")
   // console.log("hello")

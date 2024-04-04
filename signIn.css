@@ -1,0 +1,150 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow: hidden;
+}
+
+header{
+    max-width: 100%;
+    text-align: center;
+    margin-right: 15px;
+    /* background-color: aqua; */
+}
+
+.section-content{
+    font-size: 12px;
+    font-weight: 400;
+    /* background-color: #767676; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUpPage{
+   width: 25%;
+    padding: 10px 25px 15px 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #d4d2d2;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.signUpPage h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.signUpPage a{
+    text-decoration: none;
+    color: rgb(8, 127, 173);
+    font-weight: 500;
+    line-height: 23px;
+    /* text-decoration: underline; */
+}
+.signUpPage input{
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: 7px;
+    box-shadow:2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #a8a3a3;
+}
+.signUpPage input:hover{
+    border-color: skyblue;
+    box-shadow:1px 1px 2px 1px skyblue;
+}
+
+.signUpPage button{
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    margin-top: 9px;
+    background-color: rgb(255, 208, 0);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.signUpPage button:hover{
+    background-color: rgb(241, 206, 48);
+}
+
+.amazon-business{
+    width: 100%;
+    line-height: 22px;
+    padding-top: 14px;
+    border-top: 1px solid #d4d2d2;
+}
+
+.section-content >h5{
+    line-height: 5;
+    color: #767676;
+    font-weight: 400;
+    position: relative;
+    /* padding: 15px */
+ }   
+
+ .create-btn{
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #d4d2d2;
+    width: 25%;
+    cursor: pointer;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+ }
+ .create-btn:hover{
+    background-color: #e2dfdf25;
+ }
+
+ .footerdown{
+    margin-top: 30px;
+    width: 100%; 
+    height: 200px;
+    background-color: #e7e2e24d;
+    display: flex;
+    justify-content: center;
+    box-shadow: 3px 1px 3px 3px rgba(0, 0, 0, 0.1);
+ }
+
+ .footerdown .about ul{
+     display: flex;
+     gap: 25px;
+     list-style: none;
+ }
+
+ .about{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+ }
+
+ .about ul a{
+    text-decoration: none;
+    color: rgb(8, 127, 173);
+    /* margin-right: 30px; */
+ }
+
+ .hide{
+    display: none;
+ }
+
+ .toggle1 >i{
+    transform: rotate(90deg);
+ }
+
+.rotate {
+    transform: rotate(-90deg); 
+}
