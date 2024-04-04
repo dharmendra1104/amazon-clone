@@ -904,16 +904,37 @@ ul a {
 }
 
 .hdn-sign {
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     z-index: 101;
     transition: all 2s;
     /* display: none; */
     width: 500px;
-    height: 380px;
+    height: 395px;
     top: 60px;
     right: 80px;
     background-color: white;
     border-radius: 5px;
+}
+
+.login-btn{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-btn button{
+    width: 150px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(255, 208, 0);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn p{
+    font-size: 11px;
+    margin-top: 3px;
 }
 
 .hdn-table {
@@ -924,7 +945,7 @@ ul a {
 
 .hdn-table h3 {
     font-size: 16px;
-    padding: 10px 0;
+    margin-left: 20px;
 }
 
 .hdn-table li {
@@ -938,7 +959,15 @@ ul a {
     width: 0.5px;
     color: black;
     background-color: rgb(190, 190, 190);
-    height: 280px;
+    height: 305px;
+}
+
+.hdn-line1{
+    width:450px;
+    color: black;
+    background-color: rgb(190, 190, 190);
+    height: 0.5px;
+    margin: 10px 0px 0px 25px;
 }
 
 .stop-scroll {
@@ -950,7 +979,8 @@ ul a {
 /* for language selection bar */
 
 .language {
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     z-index: 101;
     transition: all 2s;
     /* display: none; */
