@@ -5,7 +5,8 @@
     font-weight: 500;
     font-style: normal;
 }
-body{
+
+body {
     letter-spacing: 0.6px;
 }
 
@@ -29,7 +30,7 @@ header {
     display: none !important;
 }
 
-.nav0{
+.nav0 {
     background-color: rgba(0, 0, 0, 0.644) !important;
 }
 
@@ -90,27 +91,38 @@ header {
 /**box3**/
 .nav-search {
     display: flex;
-    justify-content: space-evenly;
-    background-color: black;
-    width: 620px;
+    width: 680px;
     height: 40px;
-    /* border-radius: 4px; */
+    justify-content: space-between;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    /* background-color: aqua; */
     border: 2px solid transparent;
-}
-
-.search-select {
-    background-color: antiquewhite;
-    width: 50px;
-    text-align: center;
+  }
+  
+  .search-select {
+    padding: 8px;
+    border: 1px solid #ccc;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    border: none;
-}
-
-.search-input {
+    width: 80px;
+    min-width: px; /* Set a minimum width to prevent it from becoming too narrow */
+    background-color: antiquewhite;
+   }
+  
+  .search-input {
+    outline: none;
+    flex: 2;
     width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
     font-size: 1rem;
-    border: none;
+  }
+
+
+
+.search-select option {
+    background-color: white;
 }
 
 .search-icon {
@@ -565,7 +577,7 @@ span {
 
 /* for sign-in */
 
-.sign-in{
+.sign-in {
     margin-top: 25px;
     height: 150px;
     display: flex;
@@ -573,7 +585,7 @@ span {
     align-items: center;
 }
 
-.in{
+.in {
     width: 100%;
     height: 80%;
     text-align: center;
@@ -584,15 +596,15 @@ span {
     align-items: center;
 }
 
-.page{
+.page {
     margin-top: 20px;
-   display: flex;
-   flex-direction: column;
-   gap: 6px;
-   font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
 }
 
-.page button{
+.page button {
     width: 100%;
     padding: 6px;
     border-radius: 5px;
@@ -600,8 +612,8 @@ span {
     border: 1px solid orange;
 }
 
-.page span{
-     font-size: 12px;
+.page span {
+    font-size: 12px;
 }
 
 /**footer**/
@@ -629,7 +641,7 @@ footer {
     justify-content: space-evenly;
 }
 
-.foot-panel2 a:hover{
+.foot-panel2 a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -725,8 +737,8 @@ ul a {
 }
 
 .foot-panel4,
-.foot-panel5{
-     font-size: 12px;
+.foot-panel5 {
+    font-size: 12px;
 }
 
 .uper-content,
@@ -763,12 +775,12 @@ ul a {
     color: #dddddd;
 }
 
-.noote{
+.noote {
     display: flex;
     gap: 15px;
 }
 
-.noote span:hover{
+.noote span:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -917,12 +929,12 @@ ul a {
     border-radius: 5px;
 }
 
-.login-btn{
+.login-btn {
     text-align: center;
     margin-top: 10px;
 }
 
-.login-btn button{
+.login-btn button {
     width: 150px;
     cursor: pointer;
     padding: 4px;
@@ -932,7 +944,7 @@ ul a {
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.login-btn p{
+.login-btn p {
     font-size: 11px;
     margin-top: 3px;
 }
@@ -962,8 +974,8 @@ ul a {
     height: 305px;
 }
 
-.hdn-line1{
-    width:450px;
+.hdn-line1 {
+    width: 450px;
     color: black;
     background-color: rgb(190, 190, 190);
     height: 0.5px;

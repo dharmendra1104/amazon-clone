@@ -605,3 +605,20 @@ lang.addEventListener('mouseover',()=>{
   language.classList.toggle("show")
   // console.log("hello")
 })
+
+
+document.getElementById('dynamic-select').addEventListener('change', function() {
+  var select = this;
+  var selectedOption = select.options[select.selectedIndex];
+  var width = getTextWidth(selectedOption.textContent, getComputedStyle(select).font);
+  // Add some extra width for padding and borders
+  select.style.width = (width + 20) + 'px';
+});
+
+function getTextWidth(text, font) {
+  var canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement('canvas'));
+  var context = canvas.getContext('2d');
+  context.font = font;
+  var metrics = context.measureText(text);
+  return metrics.width;
+}
