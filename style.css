@@ -407,6 +407,12 @@ span {
     overflow-y: hidden;
 }
 
+/* Hide scrollbar for other browsers */
+.items {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
 
 .item {
     margin-top: 15px;
@@ -480,6 +486,13 @@ span {
     overflow-y: hidden;
 }
 
+
+/* Hide scrollbar for other browsers */
+.kitchens {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
 .kitchen {
     margin-top: 15px;
     display: flex;
@@ -503,6 +516,13 @@ span {
     overflow-y: hidden;
 }
 
+
+/* Hide scrollbar for other browsers */
+.scooters {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
 /* arrivale store content */
 
 .arrivals {
@@ -515,6 +535,13 @@ span {
     overflow-y: hidden;
 }
 
+
+/* Hide scrollbar for other browsers */
+.arrivals {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
 /* carpets store content */
 
 .carpets {
@@ -525,6 +552,13 @@ span {
     height: 250px;
     overflow-x: scroll;
     overflow-y: hidden;
+}
+
+
+/* Hide scrollbar for other browsers */
+.carpets {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
 }
 
 /* for kitchen ,scooter, arrivel and carpets */
@@ -623,7 +657,8 @@ footer {
     font-size: 13px;
 }
 
-.foot-panel1 {
+.foot-panel1 a{
+    text-decoration: none;
     background-color: #37475a;
     color: white;
     height: 50px;
